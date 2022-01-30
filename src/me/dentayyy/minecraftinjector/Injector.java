@@ -19,7 +19,7 @@ public class Injector {
         System.out.println(pid);
         if (pid != null) {
             VirtualMachine vm = VirtualMachine.attach(pid);
-            vm.loadAgent(new File("agent.jar").getAbsolutePath());
+            vm.loadAgent(new File("InfinityHax.jar").getAbsolutePath());
             vm.detach();
         }
         System.out.println("Injected!");
